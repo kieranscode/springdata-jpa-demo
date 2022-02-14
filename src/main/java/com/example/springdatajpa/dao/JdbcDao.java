@@ -13,7 +13,7 @@ public class JdbcDao {
     public void testConnect() throws SQLException{
 
         try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/repo_demo",
-                                "root", "liuguixin111")) {
+                                "root", "password")) {
 
             boolean isValid = conn.isValid(0);
             System.out.println("Do we have a valid db connection? = " + isValid);
